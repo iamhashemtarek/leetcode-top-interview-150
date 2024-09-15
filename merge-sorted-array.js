@@ -23,6 +23,7 @@ let merge = (nums1, m, nums2, n) => {
   }
 };
 
+//case1
 let nums1 = [1, 2, 3, 0, 0, 0];
 let nums2 = [2, 5, 6];
 let m = 3;
@@ -31,6 +32,7 @@ let n = 3;
 merge(nums1, m, nums2, n);
 console.log("sorted array1 : ", nums1);
 
+//case2
 nums1 = [1];
 nums2 = [];
 m = 1;
@@ -38,6 +40,7 @@ n = 0;
 merge(nums1, m, nums2, n);
 console.log("sorted array2 : ", nums1);
 
+//case 3
 nums1 = [0];
 nums2 = [1];
 m = 0;
@@ -45,6 +48,7 @@ n = 1;
 merge(nums1, m, nums2, n);
 console.log("sorted array3 : ", nums1);
 
+//case 4
 nums1 = [2, 0];
 nums2 = [1];
 m = 1;
