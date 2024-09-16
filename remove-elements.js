@@ -12,7 +12,7 @@ let removeElements = (arr, val) => {
   for (let i = 0; i < cntr; i++) {
     let j = cntr;
     if (arr[i] == val) {
-      if (arr[j] == val) {
+      while (arr[j] == val) {
         j++;
       }
       [arr[i], arr[j]] = [arr[j], arr[i]];
@@ -37,7 +37,7 @@ c = removeElements(arr, val);
 console.log(c);
 console.log(arr);
 
-arr = [0,4,4,0,4,4,4,0,2];
+arr = [0, 4, 4, 0, 4, 4, 4, 0, 2];
 val = 4;
 
 c = removeElements(arr, val);
